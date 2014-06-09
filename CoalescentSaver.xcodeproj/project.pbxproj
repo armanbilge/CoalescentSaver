@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CD8D0DC1945F26000DCCB6D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD8D0DB1945F26000DCCB6D /* Cocoa.framework */; };
+		1CD8D0DE1945F26000DCCB6D /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD8D0DD1945F26000DCCB6D /* ScreenSaver.framework */; };
+		1CD8D0E81945F26000DCCB6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CD8D0E61945F26000DCCB6D /* InfoPlist.strings */; };
+		1CD8D0EC1945F26000DCCB6D /* CoalescentSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8D0EB1945F26000DCCB6D /* CoalescentSaverView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1CD8D0D81945F26000DCCB6D /* CoalescentSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoalescentSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CD8D0DB1945F26000DCCB6D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1CD8D0DD1945F26000DCCB6D /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		1CD8D0E01945F26000DCCB6D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1CD8D0E11945F26000DCCB6D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1CD8D0E21945F26000DCCB6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1CD8D0E51945F26000DCCB6D /* CoalescentSaver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoalescentSaver-Info.plist"; sourceTree = "<group>"; };
+		1CD8D0E71945F26000DCCB6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1CD8D0E91945F26000DCCB6D /* CoalescentSaver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoalescentSaver-Prefix.pch"; sourceTree = "<group>"; };
+		1CD8D0EA1945F26000DCCB6D /* CoalescentSaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoalescentSaverView.h; sourceTree = "<group>"; };
+		1CD8D0EB1945F26000DCCB6D /* CoalescentSaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoalescentSaverView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CD8D0D31945F26000DCCB6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD8D0DE1945F26000DCCB6D /* ScreenSaver.framework in Frameworks */,
+				1CD8D0DC1945F26000DCCB6D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CD8D0CD1945F26000DCCB6D = {
+			isa = PBXGroup;
+			children = (
+				1CD8D0E31945F26000DCCB6D /* CoalescentSaver */,
+				1CD8D0DA1945F26000DCCB6D /* Frameworks */,
+				1CD8D0D91945F26000DCCB6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CD8D0D91945F26000DCCB6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CD8D0D81945F26000DCCB6D /* CoalescentSaver.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CD8D0DA1945F26000DCCB6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CD8D0DB1945F26000DCCB6D /* Cocoa.framework */,
+				1CD8D0DD1945F26000DCCB6D /* ScreenSaver.framework */,
+				1CD8D0DF1945F26000DCCB6D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1CD8D0DF1945F26000DCCB6D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CD8D0E01945F26000DCCB6D /* AppKit.framework */,
+				1CD8D0E11945F26000DCCB6D /* CoreData.framework */,
+				1CD8D0E21945F26000DCCB6D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1CD8D0E31945F26000DCCB6D /* CoalescentSaver */ = {
+			isa = PBXGroup;
+			children = (
+				1CD8D0EA1945F26000DCCB6D /* CoalescentSaverView.h */,
+				1CD8D0EB1945F26000DCCB6D /* CoalescentSaverView.m */,
+				1CD8D0E41945F26000DCCB6D /* Supporting Files */,
+			);
+			path = CoalescentSaver;
+			sourceTree = "<group>";
+		};
+		1CD8D0E41945F26000DCCB6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CD8D0E51945F26000DCCB6D /* CoalescentSaver-Info.plist */,
+				1CD8D0E61945F26000DCCB6D /* InfoPlist.strings */,
+				1CD8D0E91945F26000DCCB6D /* CoalescentSaver-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1CD8D0D41945F26000DCCB6D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1CD8D0D71945F26000DCCB6D /* CoalescentSaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CD8D0EF1945F26000DCCB6D /* Build configuration list for PBXNativeTarget "CoalescentSaver" */;
+			buildPhases = (
+				1CD8D0D21945F26000DCCB6D /* Sources */,
+				1CD8D0D31945F26000DCCB6D /* Frameworks */,
+				1CD8D0D41945F26000DCCB6D /* Headers */,
+				1CD8D0D51945F26000DCCB6D /* Resources */,
+				1CD8D0D61945F26000DCCB6D /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoalescentSaver;
+			productName = CoalescentSaver;
+			productReference = 1CD8D0D81945F26000DCCB6D /* CoalescentSaver.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CD8D0CE1945F26000DCCB6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Computational Evolution Group";
+			};
+			buildConfigurationList = 1CD8D0D11945F26000DCCB6D /* Build configuration list for PBXProject "CoalescentSaver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1CD8D0CD1945F26000DCCB6D;
+			productRefGroup = 1CD8D0D91945F26000DCCB6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CD8D0D71945F26000DCCB6D /* CoalescentSaver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CD8D0D51945F26000DCCB6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD8D0E81945F26000DCCB6D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		1CD8D0D61945F26000DCCB6D /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CD8D0D21945F26000DCCB6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD8D0EC1945F26000DCCB6D /* CoalescentSaverView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1CD8D0E61945F26000DCCB6D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CD8D0E71945F26000DCCB6D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CD8D0ED1945F26000DCCB6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1CD8D0EE1945F26000DCCB6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1CD8D0F01945F26000DCCB6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoalescentSaver/CoalescentSaver-Prefix.pch";
+				INFOPLIST_FILE = "CoalescentSaver/CoalescentSaver-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		1CD8D0F11945F26000DCCB6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoalescentSaver/CoalescentSaver-Prefix.pch";
+				INFOPLIST_FILE = "CoalescentSaver/CoalescentSaver-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CD8D0D11945F26000DCCB6D /* Build configuration list for PBXProject "CoalescentSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD8D0ED1945F26000DCCB6D /* Debug */,
+				1CD8D0EE1945F26000DCCB6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CD8D0EF1945F26000DCCB6D /* Build configuration list for PBXNativeTarget "CoalescentSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD8D0F01945F26000DCCB6D /* Debug */,
+				1CD8D0F11945F26000DCCB6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CD8D0CE1945F26000DCCB6D /* Project object */;
+}
