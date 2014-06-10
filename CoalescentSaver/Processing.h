@@ -21,4 +21,4 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-#define constrain(x, y, z)  (x > y ? (x < y ? x : z) : y)
+#define constrain(x, y, z)  (x > y ? (x < z ? x : z) : y)
