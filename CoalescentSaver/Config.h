@@ -31,14 +31,14 @@
 #define BLACKBG true
 #define BRANCHCOLORING true
 
-#define CHARGE 200
+#define CHARGE 100
 #define MAXVEL 4.0
 #define MAXRAD 6
 #define BASELINE 25
 #define WALLMULTIPLIER 20
-#define TRACEDEPTH 128
-#define PUSHBACK 0.75
-#define LINEWIDTH 3.0
+#define TRACEDEPTH 64
+#define PUSHBACK 1.5
+#define LINEWIDTH 2.0
 
 #if BLACKBG
 #define BG 0.0
@@ -48,7 +48,7 @@
 #define OUTLINE 0.0
 #endif
 
-#define N 12
+#define N 16
 #define MU 0.1
 #define GEN 60.0
 
