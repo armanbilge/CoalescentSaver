@@ -354,6 +354,7 @@
 				1CD8D0F11945F26000DCCB6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
