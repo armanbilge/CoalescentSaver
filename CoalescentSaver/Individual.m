@@ -46,7 +46,7 @@
         else
             _hue = INDHUE;
         
-        if (!TWODIMEN) [_loc setY:_size->height - BASELINE];
+        if (!TWODIMEN) [_loc setY:BASELINE];
         
         _trace = [NSMutableArray new];
         for (int i = 0; i < TRACEDEPTH; ++i) {
@@ -85,11 +85,11 @@
 - (void)update {
     [_vel addWithVector:_acc];
     [_vel setX:constrain([_vel x], -MAXVEL, MAXVEL)];
-    [_vel setX:constrain([_vel y], -MAXVEL, MAXVEL)];
+    [_vel setY:constrain([_vel y], -MAXVEL, MAXVEL)];
     
     [_loc addWithVector:_vel];
     
-    if (!TWODIMEN) [_loc setY:_size->height - BASELINE];
+    if (!TWODIMEN) [_loc setY:BASELINE];
     
     if (_growing) _r += 0.9;
     if (_r > 1.3 * MAXRAD) _growing = false;
@@ -130,7 +130,7 @@
     for (int i = TRACEDEPTH - 1; i > 0; --i) {
         Vector* tl = (Vector*) [_trace objectAtIndex:i];
         if (!TWODIMEN) {
-            [tl setY:[tl y] - PUSHBACK];
+            [tl setY:[tl y] + PUSHBACK];
         }
         NSColor* stroke;
         if (BRANCHCOLORING) {
@@ -142,9 +142,12 @@
         }
         [stroke set];
         NSBezierPath* path = [NSBezierPath bezierPath];
+        [path setLineWidth:LINEWIDTH];
         [path moveToPoint:NSMakePoint(tempx, tempy)];
         [path lineToPoint:NSMakePoint([tl x], [tl y])];
         [path stroke];
+        tempx = [tl x];
+        tempy = [tl y];
     }
 }
 

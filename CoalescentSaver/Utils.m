@@ -31,7 +31,7 @@ float coulomb(float d) {
     if (d > 0) {
         force = CHARGE * CHARGE / (d * d);
     } else {
-        force = 10000;
+        force = 100000;
     }
     return force;
 }

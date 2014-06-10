@@ -40,7 +40,7 @@
             float w = SSRandomFloatBetween(0, _size->width);
             float h = SSRandomFloatBetween(0, _size->height);
             if (!TWODIMEN) {
-                h = _size->height - BASELINE;
+                h = BASELINE;
             }
             [_pop addObject:[[Individual alloc] initWithLocation:[[Vector alloc] initWithX:w y:h] size:_size]];
         }
@@ -76,14 +76,19 @@
 
 - (void)replicate {
     if ([_pop count] > 0) {
-        int rand = (int) SSRandomFloatBetween(0, [_pop count]);
+        int rand = SSRandomIntBetween(0, (int) [_pop count] - 1);;
         Individual* ind = [_pop objectAtIndex:rand];
         float newx = [[ind loc] x] + SSRandomFloatBetween(-1, 1);
         float newy = [[ind loc] y] + SSRandomFloatBetween(-1, 1);
         [_pop addObject:[[Individual alloc] initWithLocation:[[Vector alloc] initWithX:newx y:newy] hue:[ind hue] array:[ind trace] size:_size]];
     } else {
         float w = _size->width/2 + SSRandomFloatBetween(-1, 1);
-        float h = _size->height/2 + SSRandomFloatBetween(-1, 1);
+        float h;
+        if (TWODIMEN) {
+            h = _size->height/2 + SSRandomFloatBetween(-1, 1);
+        } else {
+            h = BASELINE;
+        }
         [_pop addObject:[[Individual alloc] initWithLocation:[[Vector alloc] initWithX:w y:h] size:_size]];
     }
 }
@@ -98,7 +103,7 @@
     if (livecount > 0) {
         Individual* ind;
         do {
-            int rand = (int) SSRandomFloatBetween(0, [_pop count]);
+            int rand = SSRandomIntBetween(0, (int) [_pop count] - 1);
             ind = [_pop objectAtIndex:rand];
         } while ([ind dying]);
         [ind setDying:true];
@@ -131,7 +136,7 @@
     float popMu = 1.0 / GEN * N * MU;
     int events = poissonSample(popMu);
     for (int i = 0; i < events; ++i) {
-        int rand = (int) SSRandomFloatBetween(0, [_pop count]);
+        int rand = SSRandomIntBetween(0, (int) [_pop count] - 1);
         Individual* ind = [_pop objectAtIndex:rand];
         [ind mutate];
     }
