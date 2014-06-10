@@ -11,6 +11,16 @@
 		1CD8D0DE1945F26000DCCB6D /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD8D0DD1945F26000DCCB6D /* ScreenSaver.framework */; };
 		1CD8D0E81945F26000DCCB6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CD8D0E61945F26000DCCB6D /* InfoPlist.strings */; };
 		1CD8D0EC1945F26000DCCB6D /* CoalescentSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8D0EB1945F26000DCCB6D /* CoalescentSaverView.m */; };
+		1CD8D0F31945F28D00DCCB6D /* Config.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CD8D0F21945F28D00DCCB6D /* Config.h */; };
+		1CD8D0FA1945F2C900DCCB6D /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CD8D0F81945F2C900DCCB6D /* Utils.h */; };
+		1CD8D0FB1945F2C900DCCB6D /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8D0F91945F2C900DCCB6D /* Utils.m */; };
+		1CD8D0FE1945F2ED00DCCB6D /* Vector.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CD8D0FC1945F2ED00DCCB6D /* Vector.h */; };
+		1CD8D0FF1945F2ED00DCCB6D /* Vector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8D0FD1945F2ED00DCCB6D /* Vector.m */; };
+		1CD8D1011945F30800DCCB6D /* Processing.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CD8D1001945F30800DCCB6D /* Processing.h */; };
+		1CD8D1081945F39D00DCCB6D /* Individual.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CD8D1061945F39D00DCCB6D /* Individual.h */; };
+		1CD8D1091945F39D00DCCB6D /* Individual.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8D1071945F39D00DCCB6D /* Individual.m */; };
+		1CD8D10C1945F3B600DCCB6D /* Population.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CD8D10A1945F3B600DCCB6D /* Population.h */; };
+		1CD8D10D1945F3B600DCCB6D /* Population.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8D10B1945F3B600DCCB6D /* Population.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +35,16 @@
 		1CD8D0E91945F26000DCCB6D /* CoalescentSaver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoalescentSaver-Prefix.pch"; sourceTree = "<group>"; };
 		1CD8D0EA1945F26000DCCB6D /* CoalescentSaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoalescentSaverView.h; sourceTree = "<group>"; };
 		1CD8D0EB1945F26000DCCB6D /* CoalescentSaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoalescentSaverView.m; sourceTree = "<group>"; };
+		1CD8D0F21945F28D00DCCB6D /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		1CD8D0F81945F2C900DCCB6D /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		1CD8D0F91945F2C900DCCB6D /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		1CD8D0FC1945F2ED00DCCB6D /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
+		1CD8D0FD1945F2ED00DCCB6D /* Vector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vector.m; sourceTree = "<group>"; };
+		1CD8D1001945F30800DCCB6D /* Processing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processing.h; sourceTree = "<group>"; };
+		1CD8D1061945F39D00DCCB6D /* Individual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Individual.h; sourceTree = "<group>"; };
+		1CD8D1071945F39D00DCCB6D /* Individual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Individual.m; sourceTree = "<group>"; };
+		1CD8D10A1945F3B600DCCB6D /* Population.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Population.h; sourceTree = "<group>"; };
+		1CD8D10B1945F3B600DCCB6D /* Population.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Population.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +102,16 @@
 			children = (
 				1CD8D0EA1945F26000DCCB6D /* CoalescentSaverView.h */,
 				1CD8D0EB1945F26000DCCB6D /* CoalescentSaverView.m */,
+				1CD8D0F21945F28D00DCCB6D /* Config.h */,
+				1CD8D1061945F39D00DCCB6D /* Individual.h */,
+				1CD8D1071945F39D00DCCB6D /* Individual.m */,
+				1CD8D10A1945F3B600DCCB6D /* Population.h */,
+				1CD8D10B1945F3B600DCCB6D /* Population.m */,
+				1CD8D1001945F30800DCCB6D /* Processing.h */,
+				1CD8D0F81945F2C900DCCB6D /* Utils.h */,
+				1CD8D0F91945F2C900DCCB6D /* Utils.m */,
+				1CD8D0FC1945F2ED00DCCB6D /* Vector.h */,
+				1CD8D0FD1945F2ED00DCCB6D /* Vector.m */,
 				1CD8D0E41945F26000DCCB6D /* Supporting Files */,
 			);
 			path = CoalescentSaver;
@@ -104,6 +134,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CD8D0FA1945F2C900DCCB6D /* Utils.h in Headers */,
+				1CD8D1081945F39D00DCCB6D /* Individual.h in Headers */,
+				1CD8D0FE1945F2ED00DCCB6D /* Vector.h in Headers */,
+				1CD8D10C1945F3B600DCCB6D /* Population.h in Headers */,
+				1CD8D0F31945F28D00DCCB6D /* Config.h in Headers */,
+				1CD8D1011945F30800DCCB6D /* Processing.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +217,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CD8D1091945F39D00DCCB6D /* Individual.m in Sources */,
 				1CD8D0EC1945F26000DCCB6D /* CoalescentSaverView.m in Sources */,
+				1CD8D10D1945F3B600DCCB6D /* Population.m in Sources */,
+				1CD8D0FB1945F2C900DCCB6D /* Utils.m in Sources */,
+				1CD8D0FF1945F2ED00DCCB6D /* Vector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

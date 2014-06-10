@@ -8,13 +8,16 @@
 
 #import "CoalescentSaverView.h"
 
+#import "Config.h"
+#import "Population.h"
+
 @implementation CoalescentSaverView
 
 - (id)initWithFrame:(NSRect)frame isPreview:(BOOL)isPreview
 {
     self = [super initWithFrame:frame isPreview:isPreview];
     if (self) {
-        [self setAnimationTimeInterval:1/30.0];
+        [self setAnimationTimeInterval:1.0/FRAMERATE];
     }
     return self;
 }
@@ -22,6 +25,7 @@
 - (void)startAnimation
 {
     [super startAnimation];
+    pop = [[Population alloc] initWithSize:&_bounds.size];
 }
 
 - (void)stopAnimation
@@ -36,7 +40,9 @@
 
 - (void)animateOneFrame
 {
-    return;
+    [[NSColor blackColor] set];
+    NSRectFill(_bounds);
+    [pop run];
 }
 
 - (BOOL)hasConfigureSheet

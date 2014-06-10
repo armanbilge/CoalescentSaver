@@ -8,6 +8,11 @@
 
 #import <ScreenSaver/ScreenSaver.h>
 
-@interface CoalescentSaverView : ScreenSaverView
+#import "Population.h"
+
+@interface CoalescentSaverView : ScreenSaverView {
+    @private
+    Population* pop;
+}
 
 @end
