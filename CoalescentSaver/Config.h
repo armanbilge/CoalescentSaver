@@ -36,7 +36,7 @@
 #define MAXRAD 6
 #define BASELINE 25
 #define WALLMULTIPLIER 20
-#define TRACEDEPTH 100//20
+#define TRACEDEPTH 128
 #define PUSHBACK 0.75
 #define LINEWIDTH 3.0
 
