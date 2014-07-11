@@ -28,7 +28,6 @@
 #define STATISTICS false
 #define HELP false
 #define FRATE false
-#define BLACKBG true
 #define BRANCHCOLORING true
 
 #define CHARGE 100
@@ -36,21 +35,13 @@
 #define MAXRAD 6
 #define BASELINE 25
 #define WALLMULTIPLIER 20
-#define TRACEDEPTH 64
-#define PUSHBACK 1.5
+#define TRACEDEPTH 128
 #define LINEWIDTH 2.0
 
-#if BLACKBG
 #define BG 0.0
 #define OUTLINE 1.0
-#else
-#define BG 1.0
-#define OUTLINE 0.0
-#endif
 
-#define N 16
 #define MU 0.1
-#define GEN 60.0
 
 #define INDHUE 0.95
 #define LOOPING true

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C089498196FC84300EBB71B /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C089497196FC84300EBB71B /* ConfigureSheet.xib */; };
 		1CD8D0DC1945F26000DCCB6D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD8D0DB1945F26000DCCB6D /* Cocoa.framework */; };
 		1CD8D0DE1945F26000DCCB6D /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD8D0DD1945F26000DCCB6D /* ScreenSaver.framework */; };
 		1CD8D0E81945F26000DCCB6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CD8D0E61945F26000DCCB6D /* InfoPlist.strings */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C089497196FC84300EBB71B /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
 		1CD8D0D81945F26000DCCB6D /* CoalescentSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoalescentSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD8D0DB1945F26000DCCB6D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1CD8D0DD1945F26000DCCB6D /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
@@ -102,6 +104,7 @@
 			children = (
 				1CD8D0EA1945F26000DCCB6D /* CoalescentSaverView.h */,
 				1CD8D0EB1945F26000DCCB6D /* CoalescentSaverView.m */,
+				1C089497196FC84300EBB71B /* ConfigureSheet.xib */,
 				1CD8D0F21945F28D00DCCB6D /* Config.h */,
 				1CD8D1061945F39D00DCCB6D /* Individual.h */,
 				1CD8D1071945F39D00DCCB6D /* Individual.m */,
@@ -196,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C089498196FC84300EBB71B /* ConfigureSheet.xib in Resources */,
 				1CD8D0E81945F26000DCCB6D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
